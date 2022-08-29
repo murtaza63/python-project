@@ -43,6 +43,6 @@ print("Size of stack", checkSize(creackStack))
 
 print("Removed element from stack is", remove(creackStack))
 
-print("========Return True if the stack is empty otherwise return False=====:")
+print("\n========Return True if the stack is empty otherwise return False=====:")
 print(checkEmpty(creackStack))
 print(" \nThe top element of the stack is", checkPeek(creackStack))
