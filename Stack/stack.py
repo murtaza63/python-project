@@ -1,48 +1,50 @@
 
-
+class Stack:
 # Creating Stack
-def stackData():
-    stack = []
-    return stack
-# Adding items into the stack
-def push(stack, item):
-    return stack.append(item)
-#Removing an element from the stack
-def remove(stack):
-    if checkEmpty(stack) == True:
-        return "stack is empty"
-    return stack.pop()
-# Creating an empty stack 
-def checkEmpty(stack):
-    if len(stack) == 0:
-        return True
-    return False
-# Checking the size of the stack
-def checkSize(stack):
-    return len(stack)
-# Getting the top element from the stack
-def checkPeek(stack):
-    if checkEmpty(stack):
-        return "Stack is empty so there is no peek element"
-    return stack[-1]
+    def stackData(self):
+        stack = []
+        return stack
+    # Adding items into the stack
+    def push(self,stack, item):
+        return stack.append(item)
+    #Removing an element from the stack
+    def remove(self,stack):
+        if self.checkEmpty(stack) == True:
+            return "stack is empty"
+        return stack.pop()
+    # Creating an empty stack 
+    def checkEmpty(self, stack):
+        if len(stack) == 0:
+            return True
+        return False
+    # Checking the size of the stack
+    def checkSize(self, stack):
+        return len(stack)
+    # Getting the top element from the stack
+    def checkPeek(self,stack):
+        if self.checkEmpty(stack):
+            return "Stack is empty so there is no peek element"
+        return stack[-1]
 
 
 
-#Examples 
+    #Examples 
 
-creackStack = stackData()
-push(creackStack, 1)
-push(creackStack, 2)
-push(creackStack, 3)
-push(creackStack, 4)
+MyStack = Stack()
+createStack = MyStack.stackData()
 
-remove(creackStack)
+MyStack.push(createStack, 1)
+MyStack.push(createStack, 2)
+MyStack.push(createStack, 3)
+MyStack.push(createStack, 4)
 
-print("Size of stack", checkSize(creackStack))
+MyStack.remove(createStack)
+
+print("Size of stack", MyStack.checkSize(createStack))
 
 
-print("Removed element from stack is", remove(creackStack))
+print("Removed element from stack is", MyStack.remove(createStack))
 
 print("\n========Return True if the stack is empty otherwise return False=====:")
-print(checkEmpty(creackStack))
-print(" \nThe top element of the stack is", checkPeek(creackStack))
+print(MyStack.checkEmpty(createStack))
+print(" \nThe top element of the stack is", MyStack.checkPeek(createStack))
