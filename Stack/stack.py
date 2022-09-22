@@ -1,4 +1,3 @@
-
 class Stack:
 # Creating Stack
     def stackData(self):
