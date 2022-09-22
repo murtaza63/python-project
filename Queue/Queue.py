@@ -39,11 +39,8 @@ queue.enqueue(6)
 queue.dequeue()
 queue.dequeue()
 queue.dequeue()
-queue.dequeue()
-queue.dequeue()
-queue.dequeue()
-queue.dequeue()
 
 
+print(queue.peek())
 
 queue.printQueue()
