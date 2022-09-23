@@ -1,4 +1,3 @@
-
 class QueueStack:
     
 
@@ -26,10 +25,3 @@ class QueueStack:
             newStack
         return self.leftStack.pop(0)
     
-
-queue = QueueStack()
-queue.enqueue("Ray")
-queue.enqueue("Brian")
-print(queue.enqueue(5))
-queue.dequeue()
-print(queue.peek())

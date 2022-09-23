@@ -1,28 +1,34 @@
-arr  = [1,2,3,4,5]
-# #arr.reverse() # using reverse() method
-# #print(arr)
+print("1st Challenge Reverse an array")
 
-# print("Using reversed()", list(reversed(arr)))
-
-# # using insert method
-# lt = []
-
-# for i in arr:
-#     lt.insert(0,i)
-# print(lt)
-# def reverseList(myList):
-#     new_lst = arr[:: -1]
-#     return new_lst
-# print(reverseList(arr))
+array = [1,2,3,4,5]
+def printInReverse(arr):
+   n = len(arr)
+   stack = []
+   for i in arr:
+      stack.append(i)
+   for i in range(0, n):
+      arr[i] = stack.pop()
+   return arr
+print("Original Array ", array)  
+print("Reversed Array",printInReverse(array))
 
 
-arr = [1,2,3,4,5]
 
-stack = []
-for i in arr:
-   stack.append(i)
-print(stack)
-value = 0
-while value == stack.pop:
-   
-   
+
+print("Next Challenge Balance Parentheses")
+testing1 = "h((e))llo(world)()"
+testing2 = "(hello world"
+
+def checkParentheses(string:str) -> bool:
+   stack = []
+   for character in string:
+      if character == "(":
+         stack.append(character)
+      elif character == ")":
+         if len(stack) == 0:
+            return False
+         else:
+            stack.pop()
+   return len(stack) == 0
+
+print(checkParentheses(testing2))
