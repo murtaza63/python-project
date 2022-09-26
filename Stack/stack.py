@@ -47,4 +47,5 @@ print("Removed element from stack is", MyStack.remove(createStack))
 print("\n========Return True if the stack is empty otherwise return False=====:")
 print(MyStack.checkEmpty(createStack))
 print(" \nThe top element of the stack is", MyStack.checkPeek(createStack))
+print(createStack)
     
