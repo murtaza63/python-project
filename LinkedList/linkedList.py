@@ -2,6 +2,8 @@
 
 
 
+
+
 class Node:
     #constructor 
     def __init__(self, value, next=None):
@@ -101,7 +103,7 @@ class LinkedList:
     def printLL(self):
         current = self.head
         while(current):
-            print(current.value)
+            print(current.value, "->", end="")
             current = current.next
 
 MyList = LinkedList()

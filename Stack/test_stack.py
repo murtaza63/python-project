@@ -28,3 +28,5 @@ class StackTester(unittest.TestCase):
 
         self.assertEquals(s.checkEmpty(), True)
 
+if __name__ == "__main__":
+    unittest.main()

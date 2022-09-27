@@ -4,12 +4,12 @@ import unittest
 import linkedList
 list1 = linkedList.LinkedList()
 list1.push(11)
-def add(x, y):
-    return x + y
+
 
 class SimpleTest(unittest.TestCase):
-    def testadd(self):
-        self.assertEqual(list(list1.push(12)), [2])
+    def test_add(self):
+        list1.push(4)
+        self.assertEqual(list1.printLL(), [2])
 
 if __name__=='__main__':
     unittest.main()
@@ -21,3 +21,5 @@ list1.push(7)
 list1.push(6)
 
 list1.printLL()
+
+
