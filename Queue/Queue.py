@@ -1,7 +1,7 @@
 class QueryArray:
-    arr = []
-    def __init__(self):
-        self.arr = self.arr
+    
+    def __init__(self,arr):
+        self.arr = arr
     
 
     def isEmpty(self):

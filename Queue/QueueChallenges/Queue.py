@@ -1,4 +1,4 @@
-class QueryArray:
+class QueueArray:
     arr = []
     def __init__(self):
         self.arr = self.arr
@@ -27,7 +27,7 @@ class QueryArray:
 
 
 
-queue = QueryArray()
+queue = QueueArray()
 queue.enqueue(1)
 queue.enqueue(2)
 queue.enqueue(3)
