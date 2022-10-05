@@ -1,4 +1,4 @@
-class QueryArray:
+class QueueArray:
     
     def __init__(self,arr):
         self.arr = arr
@@ -14,7 +14,7 @@ class QueryArray:
         
     def dequeue(self):
         if (len(self.arr ) > 0):
-            self.arr.pop(0)
+           return self.arr.pop(0)
         
 
     def printQueue(self):
@@ -22,12 +22,13 @@ class QueryArray:
     def peek(self):
         if (len(self.arr) > 0):
             print(self.arr[0])
+            return self.arr[0]
         else:
             print("Queue is empty so there is no any peek element")
 
 
-
-queue = QueryArray()
+arr = []
+queue = QueueArray(arr)
 queue.enqueue(1)
 queue.enqueue(2)
 queue.enqueue(3)
@@ -41,6 +42,6 @@ queue.dequeue()
 queue.dequeue()
 
 
-print(queue.peek())
+queue.peek()
 
 queue.printQueue()
