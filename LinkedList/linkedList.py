@@ -26,6 +26,7 @@ class LinkedList:
         new_node =  Node(NewValue)
         new_node.next = self.head
         self.head = new_node
+        return self.head
         
     
     def append(self, new_value):
@@ -103,7 +104,8 @@ class LinkedList:
     def printLL(self):
         current = self.head
         while(current):
-            print(current.value, "->", end="")
+            # print(current.value, "->", end="")
+            return current.value
             current = current.next
 
 MyList = LinkedList()
@@ -151,15 +153,22 @@ list1.push(4)
 list1.push(3)
 list1.push(2)
 list1.push(1)
-print(list1.printLL())
+list1.printLL()
 
 example("append")
 list2 = LinkedList()
 list2.append(1)
 list2.append(2)
 list2.append(3)
-print(list2.printLL())
+list2.printLL()
   
+example("insert")
+list3 = LinkedList()
+
+list3.insert(2,Node(3))
+list3.insert(3,Node(2))
+
+list3.printLL()
 
 
 
