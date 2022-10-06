@@ -14,5 +14,5 @@ tree.traversePreOrder()
 print("\nPost order Traversal:\n", end='')
 tree.traversePostOrder()
 
-
+print("root is :",tree.printTree())
 

@@ -15,8 +15,12 @@ class BinaryTreeNode:
         print(self.value, end='\n')
         if self.left:
             self.left.traversePreOrder()
+        else:
+            print(None)
         if self.right:
             self.right.traversePreOrder()
+        else:
+            print( None)
     def traversePostOrder(self):
         if self.left:
             self.left.traversePostOrder()
@@ -27,11 +31,12 @@ class BinaryTreeNode:
     
 
     def diagram(self, top:str, root:str,bottom:str) -> str:
-        self.value  = self.value
-        if self.value == self.value:
+        
+        if self.value:
             return self.value
         else:
             return root + "None\n"
+
         if self.left == None and self.right == None:
             return root + self.value,"\n"
         return diagram(self.right, top, " ", top, "┌──", top, "| ")
