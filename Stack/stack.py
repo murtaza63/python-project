@@ -3,7 +3,7 @@ class Stack:
     def stackData(self):
         stack = []
         return stack
-    # Adding items into the stack
+    
     def push(self,stack, item):
         return stack.append(item)
     #Removing an element from the stack
