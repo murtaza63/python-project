@@ -3,7 +3,7 @@ class Stack:
     def stackData(self):
         stack = []
         return stack
-    # Adding items into the stack
+    
     def push(self,stack, item):
         return stack.append(item)
     #Removing an element from the stack
@@ -19,7 +19,7 @@ class Stack:
     # Checking the size of the stack
     def checkSize(self, stack):
         return len(stack)
-    # Getting the top element from the stack
+    
     def checkPeek(self,stack):
         if self.checkEmpty(stack):
             return "Stack is empty so there is no peek element"
@@ -27,7 +27,7 @@ class Stack:
 
 
 
-    #Examples 
+    
 
 MyStack = Stack()
 createStack = MyStack.stackData()
