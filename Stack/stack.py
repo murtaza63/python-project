@@ -26,8 +26,7 @@ class Stack:
         return stack[-1]
 
 
-
-    
+# Run test
 
 MyStack = Stack()
 createStack = MyStack.stackData()
