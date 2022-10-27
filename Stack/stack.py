@@ -19,7 +19,7 @@ class Stack:
     # Checking the size of the stack
     def checkSize(self, stack):
         return len(stack)
-    
+    # Check this test
     def checkPeek(self,stack):
         if self.checkEmpty(stack):
             return "Stack is empty so there is no peek element"
