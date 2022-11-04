@@ -7,7 +7,7 @@ class testQueue(unittest.TestCase):
         arr = []
         myQue = Queue.QueueArray(arr)
 
-        self.assertEqual(myQue.isEmpty() , True)
+        self.assertEqual(myQue.is_empty() , True)
         
 
     def test_enqueue(self):

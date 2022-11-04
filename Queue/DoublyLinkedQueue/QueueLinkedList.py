@@ -4,7 +4,7 @@ import DoublyLinkedList
 
 QueList = DoublyLinkedList.DoublyLinkedList
 class QueueLinkedList:
-    list = QueList()
+    dll = QueList()
     
     def first(self):
         return self.head.value
@@ -15,14 +15,14 @@ class QueueLinkedList:
         else:
             return False
     def  enqueue(self, element) ->bool:
-        list.append(element)
+        self.dll.append(element)
         return True
     def dequeue(self):
         if self.checkEmpty():
-            element = self.list.first
+            element = self.dll.first
         else:
             return None
-        return self.list.remove(element)
+        return self.dll.remove(element)
 
 
 

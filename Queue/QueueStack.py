@@ -1,9 +1,10 @@
-
+from typing import Generic, Optional, TypeVar
+from Queue import Queue
+T = TypeVar("T")
 class QueueStack:
-    
-
-    leftStack = []
-    rightStack = []
+    def __init__(self):
+        self.leftStack: list[T] = []
+        self.rightStack: list[T] = []
 
     def isEmpty(self)->bool:
         if len(self.leftStack) == 0 and len(self.rightStack) == 0:

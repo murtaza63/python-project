@@ -4,7 +4,7 @@ class QueueArray:
         self.arr = arr
     
 
-    def isEmpty(self):
+    def is_empty(self):
         if len(self.arr) == 0:
             return True 
         else:
