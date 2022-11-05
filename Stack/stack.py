@@ -41,6 +41,8 @@ MyStack.push(createStack, 2)
 MyStack.push(createStack, 3)
 MyStack.push(createStack, 4)
 
+# Stack before remove
+print(MyStack)
 MyStack.remove(createStack)
 
 print("Size of stack", MyStack.checkSize(createStack))
